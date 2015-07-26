@@ -6,7 +6,6 @@ class Model
 	public function save()
 	{
 		$elements =get_object_vars( $this );
-		
 		$sql = "Insert into $this->table (";
 		foreach ($elements as $element=>$value)
 		if(strcmp($element,"database")&&strcmp($element,"table"))
